@@ -1,3 +1,12 @@
+Website Deployment : https://nifty-spence-4cc923.netlify.app/
+
+Sign up page is not working on live server it's working fine on localhost, I am still trying to figure that out.. 
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
