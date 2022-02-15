@@ -18,7 +18,10 @@ h1 {
 }
 p {
   text-align: center;
-  color: white;
+  color: #fff;
+}
+.hp {
+  color: #fff;
 }
 /* add issues */
 .c {
@@ -201,7 +204,17 @@ body {
   font-weight: 400;
   font-family: Poppins;
   background-image: url("./assets/3414987.jpg");
+  width: 100%;
+  height: 500px;
+  background-size:cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  
+  
 }
+
 
 .container {
   width: 900px;
@@ -287,6 +300,36 @@ body {
 figure {
   margin-bottom: 50px;
   text-align: center;
+}
+
+/* button  */
+
+.hc {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.hb {
+  cursor: pointer;
+  margin-top: 69%;
+  font-size: 1.6rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #2585df;
+  outline: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.70);
+}
+
+.hb:hover{
+  filter: brightness(90%);
+}
+
+.hb:active {
+  transform:translate(0,0.3rem);
+  box-shadow: 0 0.1rem rgba(225, 255, 255, 0.70);
 }
 
 .form-submit {

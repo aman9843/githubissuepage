@@ -27,7 +27,7 @@ function SignUp() {
     e.preventDefault();
 
     const { name, email, pass, re_pass } = user;
-    const res = await fetch("/signup", {
+    const res = await fetch("https://newgithub9843.herokuapp.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

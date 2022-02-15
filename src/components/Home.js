@@ -72,19 +72,13 @@ function Home() {
       
      <div className="col-md">
       <h1 className="display-4">Welcome To Github Issue Page !</h1>
-      <p>You need to register first!</p>
-      <p> After that you can push an issue..</p>
+      <p className="hp ">You need to register first!</p>
+      <p className="hp "> After that you can push an issue..</p>
      
-      <div className="form-group form-button home">
+      <div className="hc">
         
         <Link className="nav-link" to="/signup">
-          <input
-            type="submit"
-            name="signup"
-            id="signup"
-            className="form-submit"
-            value="Register"
-          />
+        <button className="hb" type="button">Register</button>
         </Link>
         </div>
         </div>

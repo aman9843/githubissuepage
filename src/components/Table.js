@@ -11,7 +11,7 @@ const Table = () => {
   console.log(getuserdata);
 
   const getdata = async () => {
-    const res = await fetch("/table", {
+    const res = await fetch("https://newgithub9843.herokuapp.com/table", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const Table = () => {
   }, [])
 
 const deleteuser = async (id) => {
-const res2 = await fetch(`/deleteuser/${id}`,{
+const res2 = await fetch(`https://newgithub9843.herokuapp.com/deleteuser/${id}`,{
     method:"DELETE",
     headers: {
       "Content-Type" : "application/json"

@@ -39,7 +39,7 @@ const Edit = () => {
 
 
 const getdata = async () => {
-    const res = await fetch(`/getuser/${id}`, {
+    const res = await fetch(`https://newgithub9843.herokuapp.com/getuser/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const getdata = async () => {
 
       const {name,email,age,mobile,work,add,desc} = inpval
 
-      const res2 = await fetch(`/updateuser/${id}`, {
+      const res2 = await fetch(`https://newgithub9843.herokuapp.com/updateuser/${id}`, {
           method:"PATCH",
           headers:{
               "Content-Type": "application/json"
@@ -111,7 +111,7 @@ const getdata = async () => {
                     </div>
                     <div className="mb-3 col-lg-6 col-md-6 col-12">
                         <label htmlFor="exampleInputPassword1" className="form-label c">age</label>
-                        <input type="text"  name="age" value={inpval.age} onChange={setData}  className="form-control" id="exampleInputPassword1" />
+                        <input type="number"  name="age" value={inpval.age} onChange={setData}  className="form-control" id="exampleInputPassword1" />
                     </div>
                     <div className="mb-3 col-lg-6 col-md-6 col-12">
                         <label htmlFor="exampleInputPassword1" className="form-label c">Mobile</label>

@@ -24,6 +24,7 @@ app.use(express.json());
 app.use(require('./router/auth'));
 app.use(bodyParser.json())
 
+const port = process.env.PORT || 3003;
 
 
 
@@ -31,12 +32,11 @@ app.use(bodyParser.json())
 
 
 
+app.get('/', (req,res) => {
 
-// app.get('/', (req,res) => {
+    res.send(`hello world`)
 
-//     res.send(`hello world`)
-
-// });
+});
 
 
 
@@ -44,7 +44,7 @@ app.use(bodyParser.json())
 
  
 
-app.listen(3003, () => {
-    console.log(`server is running at port 3003`);
+app.listen(port, () => {
+    console.log(`server is running at port ${port}`);
 
 })

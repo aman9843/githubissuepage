@@ -61,7 +61,7 @@ const AddIssues = () => {
         //  formData.append("desc",inpval.desc);
         // //  formData.append("image",inpval.image);
 
-         const res = await fetch("/addissues",{
+         const res = await fetch("https://newgithub9843.herokuapp.com/addissues",{
          method: "POST",
          headers: {
                  "Content-Type": "application/json"
@@ -140,7 +140,7 @@ const AddIssues = () => {
               age
             </label>
             <input
-              type="text"
+              type="number"
               name="age"
               value={inpval.age}
               onChange={setData}
@@ -153,7 +153,7 @@ const AddIssues = () => {
               Mobile
             </label>
             <input
-              type="text"
+              type="number"
               name="mobile"
               value={inpval.mobile}
               onChange={setData}
