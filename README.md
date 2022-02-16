@@ -1,6 +1,6 @@
-Website Deployment : https://nifty-spence-4cc923.netlify.app/
+Website Deployment : https://reverent-jepsen-e1bfce.netlify.app/
 
-Sign up page is not working on live server it's working fine on localhost, I am still trying to figure that out.. 
+
 
 
 
